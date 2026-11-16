@@ -1,0 +1,37 @@
+{
+  "accession": "PSI-106",
+  "title": "Structure and Liftoff In Combustion Experiment",
+  "investigationAcronym": "SLICE",
+  "projectType": "Microgravity Investigation",
+  "researchArea": "Combustion Science",
+  "subResearchArea": "",
+  "objective": "Objective: The objective of this investigation is to better understand the structure and stability of laminar diffusion flames in microgravity.\n\nSpecific objectives of this investigation were:\n1. To investigate the structure of laminar diffusion flames in microgravity to understand the stabilizing mechanisms at the flames base.\n2. Determine the liftoff velocity limits for different fuels and burner diameters.\n3. Evaluate the impact of fuel dilution with nitrogen on soot formation and flame stability.\n4. Quantify the effects of microgravity on flame length and radiative heat loss compared to normal gravity conditions.\n5. Validate numerical models for flame dynamics, soot production, and thermal radiation in non-premixed flames.",
+  "approach": "The SLICE apparatus consisted of a fan-driven flow duct, exchangeable burner tubes, and integrated sensors to measure flow rates and temperature. This setup used several fuels such as methane, ethylene, and nitrogen-diluted mixtures. Flames were then manually ignited and observed under controlled coflow air conditions. A high resolution camera captured still images while sensor data was overlaid on these images. Calibration tests for airflow velocity, soot measurement, and the fans were conducted to ensure the accuracy of the results. More than 4,000 high-resolution images were captured across 13 testing experiments. Data was then analyzed to correlate flame structure with stability with flow dynamics and fuel properties.",
+  "hypothesis": "The hypothesis is that the structure and stability of laminar diffusion flames in microgravity are significantly influenced by burner diameter, coflow velocity, and fuel composition and are fundamentally different than flames observed on Earth.",
+  "researchImpacts": "1. Improved numerical models for flame behavior lead to more efficient combustion technologies on Earth.\n2. Understanding soot formation aids in designing combustion systems with minimum emissions.\n3. Insights into flame stability and behavior to enhance fire safety.\n4. Findings will inform the development of cleaner, more efficient engines and industrial burners.",
+  "flightProgram": "International Space Station (ISS)",
+  "investigationStartDate": "",
+  "investigationEndDate": "",
+  "doi": "10.60555/pm12-rg61",
+  "totalFileSize": 72914598688.0,
+  "version": 3,
+  "experimentHardware": "",
+  "related_glds": "PSI-107",
+  "licenseName": "Creative Commons Zero v1.0 Universal",
+  "managingNasaCenter": "Glenn Research Center (GRC)",
+  "spaceProgram": "National Aeronautics and Space Administration (NASA)",
+  "localFiles": [
+    {
+      "folder": "metadata",
+      "name": "PSI-106_metadata_PSI-174_SLICE.zip",
+      "bytes": 8743,
+      "expected": 8743
+    },
+    {
+      "folder": "experimental-table",
+      "name": "PSI-106_Experimental table_Slice.csv",
+      "bytes": 734,
+      "expected": 734
+    }
+  ]
+}

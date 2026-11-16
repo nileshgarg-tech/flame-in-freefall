@@ -1,0 +1,37 @@
+{
+  "accession": "PSI-25",
+  "title": "Burning and Suppression of Solids - II",
+  "investigationAcronym": "BASS-II",
+  "projectType": "Microgravity Investigation",
+  "researchArea": "Combustion Science",
+  "subResearchArea": "Spacecraft Fire Safety",
+  "objective": "BASS-II results contribute to the combustion computational models used in the design of fire detection and suppression systems in microgravity and on Earth.\nObjectives Include:\n  1) Study the ignition, flame growth, flame spread, and extinction limits for solid fuels burning in low-velocity forced flows in microgravity.\n  2) Begin to bridge the gap between the normal gravity NASA-STD-6001 Test #1 method, ground-based microgravity tests, and actual material flammability in microgravity.\n  3) Provide SoFIE PIs with preliminary data to refine Science Requirements.\n  4)  Practical, realistic (thicker) fuels in typical geometries will be examined, including slabs, cylinders, and spherical sections.\n\nThe primary variables include:\n     \u2022 Forced flow velocity (speed and direction)\n     \u2022 Ambient oxygen concentration (via working volume nitrogen vitiation)\n     \u2022 Sample geometry (rods, spherical section, slabs, films, and fabric sheets",
+  "approach": "To summarize, BASS-II's approach, microgravity combustion tests were performed aboard the International Space Station. Active crew support for real-time \u201clab partner\u201d operations. The wind tunnel was installed in the Microgravity Science Glovebox which supplied power, imaging, and a level of containment. Fuel samples were mounted inside a small wind tunnel which could impose airflow speeds up to 40 cm/s. Main variables are airflow speed and oxygen concentration (oxygen varied below 21% by adding nitrogen). Flame appearance, flame growth, and spread rates were determined in both the opposed and concurrent flow.",
+  "hypothesis": "BASS\u2013II tests the hypothesis that materials in microgravity, with adequate ventilation, burn as well if not better than the same material in normal gravity with other conditions being identical (pressure, O2\nconcentration, temperature, etc.). NASA tests and controls materials from a flammability perspective using an upward burning test in normal gravity, which is considered to be the worst-case geometry for\nflammability of the material on Earth. However, it may not be conservative for flammability in space. Testing at constant O2 mole fractions permits studying flame spread and extinction at low and high flow speed. We are interested in finding the fundamental limit for a given material.",
+  "researchImpacts": "A primary goal of BASS-II is improved spacecraft fire safety, improved understanding of combustion in space and how to avoid it. If you\u2019re on a mission far from Earth, a fire can be catastrophic. BASS-II helps engineers select the safest materials and improve firefighting methods on future space missions. In outer space, fuels burn as oval balls rather than with an upward pointed cone flame as they do on Earth. This simpler combustion process enables researchers to evaluate computer models of fuel burning. These models can then be used to more accurately study flames on Earth, such as in wildfires, building fires, energy recapture from waste recycling, and other combustion problems.",
+  "flightProgram": "International Space Station (ISS)",
+  "investigationStartDate": "01-01-2010",
+  "investigationEndDate": "12-31-2022",
+  "doi": "10.60555/4qc4-de67",
+  "totalFileSize": 274631106141.0,
+  "version": 4,
+  "experimentHardware": "Microgravity Science Glovebox (MSG)",
+  "related_glds": "PSI-26",
+  "licenseName": "Creative Commons Zero v1.0 Universal",
+  "managingNasaCenter": "Glenn Research Center (GRC)",
+  "spaceProgram": "National Aeronautics and Space Administration (NASA)",
+  "localFiles": [
+    {
+      "folder": "metadata",
+      "name": "PSI-25_metadata_PSI_metadata_PSI-101_BASS-II.zip",
+      "bytes": 13439,
+      "expected": 13439
+    },
+    {
+      "folder": "experimental-table",
+      "name": "PSI-25_Experimental table_BASS-II.csv",
+      "bytes": 16590,
+      "expected": 16590
+    }
+  ]
+}
