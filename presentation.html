@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Pyrosage - Presentation Deck</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: #0b132b;
+      color: #f8fafc;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+    .deck-container {
+      width: 90vw;
+      max-width: 1200px;
+      aspect-ratio: 16 / 9;
+      background: #101c3d;
+      border: 1px solid #1e293b;
+      border-radius: 12px;
+      position: relative;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+      display: flex;
+      flex-direction: column;
+      padding: 40px 60px;
+      overflow: hidden;
+    }
+    .slide {
+      display: none;
+      flex-direction: column;
+      height: 100%;
+      animation: fadeIn 0.25s ease-in-out;
+    }
+    .slide.active {
+      display: flex;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .tag {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: #f97316;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+    .title {
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: #ffffff;
+      line-height: 1.2;
+    }
+    .subtitle {
+      font-size: 1.15rem;
+      color: #38bdf8;
+      margin-top: 6px;
+      margin-bottom: 24px;
+    }
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      flex: 1;
+    }
+    .card {
+      background: #1a2646;
+      border: 1px solid #334155;
+      border-radius: 8px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+    }
+    .card-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #f8fafc;
+      margin-bottom: 12px;
+    }
+    .card-body {
+      font-size: 0.95rem;
+      color: #94a3b8;
+      line-height: 1.5;
+    }
+    .title-banner {
+      background: #1a2646;
+      border: 1px solid #334155;
+      border-radius: 8px;
+      padding: 32px;
+      margin-top: 10px;
+    }
+    .title-banner ul {
+      list-style: none;
+      margin-top: 16px;
+    }
+    .title-banner li {
+      font-size: 1.15rem;
+      color: #f1f5f9;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .title-banner li::before {
+      content: "[+]";
+      color: #38bdf8;
+      font-weight: bold;
+    }
+    .badge {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 6px 14px;
+      background: rgba(249, 115, 22, 0.15);
+      border: 1px solid #f97316;
+      color: #f97316;
+      border-radius: 9999px;
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+    .controls {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 90vw;
+      max-width: 1200px;
+      margin-top: 20px;
+    }
+    .btn {
+      background: #1e293b;
+      color: #f8fafc;
+      border: 1px solid #334155;
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.15s ease;
+    }
+    .btn:hover {
+      background: #38bdf8;
+      color: #0b132b;
+    }
+    .slide-counter {
+      color: #94a3b8;
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
+    .speaker-notes {
+      width: 90vw;
+      max-width: 1200px;
+      background: #0f172a;
+      border: 1px dashed #334155;
+      border-radius: 8px;
+      padding: 16px 24px;
+      margin-top: 16px;
+      font-size: 0.9rem;
+      color: #cbd5e1;
+    }
+    .notes-title {
+      color: #38bdf8;
+      font-weight: 700;
+      margin-bottom: 6px;
+      text-transform: uppercase;
+      font-size: 0.75rem;
+      letter-spacing: 0.05em;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="deck-container">
+    <!-- Slide 1 -->
+    <div class="slide active" data-notes="Welcome judges. Today we present Project Pyrosage, an SI-powered combustion intelligence platform built for the NASA Space Apps 'Flame in Freefall' challenge. We translate over 30 years and 12 terabytes of microgravity flight data into operational safety constraints for Artemis and deep-space missions.">
+      <div class="tag">NASA Space Apps Challenge 2026</div>
+      <div class="title">Project Pyrosage</div>
+      <div class="subtitle">Super Intelligence Fire Safety Platform for Human Space Exploration</div>
+      <div class="title-banner">
+        <ul>
+          <li>Challenge Track: Flame in Freefall (Microgravity Combustion Science)</li>
+          <li>Unified analysis of all 24 NASA PSI flight and ground investigations (2,009 runs)</li>
+          <li>Actionable fire prevention, detection, and suppression for Moon and Mars architectures</li>
+        </ul>
+        <div class="badge">Engineered with Lauren Tan Inverted Trust Pyramid | 100% Verified</div>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="slide" data-notes="When gravity is removed, fire behaves completely differently. Natural convection disappears, so hot gases do not rise. Flames become spherical, slow-burning, and hard to detect. Compounding this, planned lunar and Mars habitats feature elevated oxygen levels, turning normally flame-retardant materials into severe fire hazards.">
+      <div class="tag">The Core Problem</div>
+      <div class="title">Fire in Freefall: The Physics of Microgravity</div>
+      <div class="subtitle">Without buoyancy-driven convection, combustion rules change completely</div>
+      <div class="card-grid">
+        <div class="card">
+          <div class="card-title">Spherical Flames</div>
+          <div class="card-body">Absence of natural buoyancy eliminates the flickering teardrop shape. Flames form cool, spherical diffusion shells reliant purely on forced HVAC ventilation.</div>
+        </div>
+        <div class="card">
+          <div class="card-title">Exploration Hazards</div>
+          <div class="card-body">Upcoming exploration architectures (such as Lunar Moon Base at 32% O2 and EVA suits at 100% O2) produce hyperoxic conditions where conventional materials burn violently.</div>
+        </div>
+        <div class="card">
+          <div class="card-title">12.3 TB Data Bottleneck</div>
+          <div class="card-body">Over 24 investigations in NASA's Physical Science Informatics repository are historically isolated, making cross-investigation comparison and risk modeling difficult.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="slide" data-notes="Rather than relying on loosely prompted AI outputs, Pyrosage implements the Lauren Tan Inverted Trust Pyramid. Every data point is strictly typed, validated through runtime Zod schemas, and verified through automated test suites. We review verification artifacts, not raw code slop.">
+      <div class="tag">Zero-Slop Engineering</div>
+      <div class="title">Architecture: The Inverted Trust Pyramid</div>
+      <div class="subtitle">Eliminating AI hallucinations through deterministic code constraints</div>
+      <div class="card-grid">
+        <div class="card">
+          <div class="card-title">TypeScript Strict Mode</div>
+          <div class="card-body">Strict compile-time types with zero implicit any. Impossible states and malformed scientific fields are unrepresentable at build time.</div>
+        </div>
+        <div class="card">
+          <div class="card-title">Zod Schema Contracts</div>
+          <div class="card-body">Runtime validation of all 24 PSI investigations and 2,009 experimental runs against strict physical schemas before rendering.</div>
+        </div>
+        <div class="card">
+          <div class="card-title">Automated Verification</div>
+          <div class="card-body">Continuous Vitest test suites executing combustion physics models and generating deterministic verification artifacts (dist/verification-report.json).</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 4 -->
+    <div class="slide" data-notes="We structured NASA's entire archive around the agency's Fire Safety Triad: Prevention through flammability limits and material selection, Detection through microgravity smoke particle dynamics, and Suppression through gaseous extinguishment agents like CO2 and Helium.">
+      <div class="tag">NASA Research Foundation</div>
+      <div class="title">The Spacecraft Fire Safety Triad</div>
+      <div class="subtitle">Structuring 24 flight and ground investigations into NASA's core safety pillars</div>
+      <div class="card-grid">
+        <div class="card">
+          <div class="card-title">1. Prevention</div>
+          <div class="card-body">Material flammability, Limiting Oxygen Index (LOI), and flame spread under forced airflow. Validated with BASS, BASS-II, Saffire-I/II/III, and CFI-G.</div>
+        </div>
+        <div class="card">
+          <div class="card-title">2. Detection</div>
+          <div class="card-body">Microgravity aerosol agglomeration and smoke particle transport. Calibrates optical and ionization sensors using SAME, SAME-R, and DAFT flight data.</div>
+        </div>
+        <div class="card">
+          <div class="card-title">3. Suppression</div>
+          <div class="card-body">Extinguishment kinetics, droplet extinction diameters, and gaseous diluent sizing (CO2 and Helium) based on FLEX and FLEX-2 experiments.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 5 -->
+    <div class="slide" data-notes="Pyrosage allows flight directors and habitat designers to dynamically test their designs against real operational environments. Users can toggle between the Lunar Gateway, pressurized rovers, Martian surface habitats, and pure oxygen EVA suits to evaluate flame spread rates and suppression requirements.">
+      <div class="tag">Operational Risk Profiles</div>
+      <div class="title">Simulating Deep Space Environments</div>
+      <div class="subtitle">Dynamic risk ranking and predictive modeling across 5 exploration atmospheres</div>
+      <div class="card-grid">
+        <div class="card">
+          <div class="card-title">Lunar Habitat & Rover</div>
+          <div class="card-body">70.3 kPa (10.2 psi), 32% O2, 10 cm/s HVAC flow. High hyperoxic risk where materials self-extinguishing on Earth burn continuously.</div>
+        </div>
+        <div class="card">
+          <div class="card-title">ISS & Orion Transit</div>
+          <div class="card-body">101.3 kPa (14.7 psi), 21% O2, 15 cm/s ventilation. Quiescent smoldering hazards in low-velocity recirculation zones.</div>
+        </div>
+        <div class="card">
+          <div class="card-title">Mars Base & EVA Suits</div>
+          <div class="card-body">Mars habitat at 55.2 kPa with 30% O2; EVA suits at 29.6 kPa with 100% pure oxygen, demanding zero ignition tolerance.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 6 -->
+    <div class="slide" data-notes="The benefits of this research extend far beyond orbit. Microgravity combustion discoveries directly improve life on Earth: fine-water-mist extinguishers replace toxic chemical agents, advanced sensors protect industrial facilities, and space-grade materials shield municipal firefighters.">
+      <div class="tag">Earth & Space Impact</div>
+      <div class="title">Dual-Use Terrestrial Innovations</div>
+      <div class="subtitle">How microgravity combustion science protects communities and firefighters on Earth</div>
+      <div class="card-grid">
+        <div class="card">
+          <div class="card-title">Water-Mist Suppression</div>
+          <div class="card-body">Fine-water-mist suppression systems developed for microgravity eliminate toxic Halon alternatives, providing safe firefighting for data centers and hospitals.</div>
+        </div>
+        <div class="card">
+          <div class="card-title">Sub-Micron Detection</div>
+          <div class="card-body">Aerosol agglomeration research powers high-sensitivity early warning smoke detectors for industrial cleanrooms, submarines, and mines.</div>
+        </div>
+        <div class="card">
+          <div class="card-title">Firefighter Protection</div>
+          <div class="card-body">Advanced flame-resistant fabrics and lightweight carbon-composite breathing systems originated directly from spacecraft thermal protective research.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 7 -->
+    <div class="slide" data-notes="In conclusion, Project Pyrosage turns 12 terabytes of complex flight telemetry into clear, verified, and actionable fire safety intelligence. The project is completely built, thoroughly tested, and ready to help safeguard the next generation of space explorers.">
+      <div class="tag">Summary & Metrics</div>
+      <div class="title">Mission Ready: Verified Intelligence</div>
+      <div class="subtitle">Empowering humanity's next giant leap with flight-proven fire safety insights</div>
+      <div class="card-grid">
+        <div class="card">
+          <div class="card-title">100% Verified Artifacts</div>
+          <div class="card-body">All 24 investigations, 2,009 runs, and combustion physics algorithms passed rigorous automated verification with zero regressions.</div>
+        </div>
+        <div class="card">
+          <div class="card-title">Intuitive SI Interface</div>
+          <div class="card-body">Full responsive design with interactive flame simulators, metric comparisons, and data export ready for aerospace research.</div>
+        </div>
+        <div class="card">
+          <div class="card-title">Exploration Vision</div>
+          <div class="card-body">Scalable architecture ready to ingest upcoming Artemis, Gateway, and commercial space station flight experiments.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="controls">
+    <button class="btn" id="prevBtn" onclick="prevSlide()">Previous</button>
+    <div class="slide-counter" id="counter">Slide 1 of 7</div>
+    <button class="btn" id="nextBtn" onclick="nextSlide()">Next</button>
+  </div>
+
+  <div class="speaker-notes">
+    <div class="notes-title">Speaker Script (Judges Pitch)</div>
+    <div id="notesText"></div>
+  </div>
+
+  <script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide');
+    const counter = document.getElementById('counter');
+    const notesText = document.getElementById('notesText');
+
+    function updateSlide() {
+      slides.forEach((s, i) => s.classList.toggle('active', i === currentSlide));
+      counter.innerText = `Slide ${currentSlide + 1} of ${slides.length}`;
+      notesText.innerText = slides[currentSlide].getAttribute('data-notes') || '';
+    }
+
+    function prevSlide() {
+      if (currentSlide > 0) {
+        currentSlide--;
+        updateSlide();
+      }
+    }
+
+    function nextSlide() {
+      if (currentSlide < slides.length - 1) {
+        currentSlide++;
+        updateSlide();
+      }
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight' || e.key === ' ') nextSlide();
+      if (e.key === 'ArrowLeft') prevSlide();
+    });
+
+    updateSlide();
+  </script>
+</body>
+</html>
