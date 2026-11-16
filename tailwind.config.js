@@ -8,26 +8,29 @@ export default {
     extend: {
       colors: {
         space: {
-          950: '#030712',
-          900: '#0b0f19',
-          850: '#111827',
-          800: '#1f2937',
-          700: '#374151',
+          950: '#070a12',
+          900: '#0b1120',
+          850: '#111a2e',
+          800: '#19243c',
+          700: '#263554',
+          600: '#3b4e75',
         },
-        flame: {
-          50: '#fff7ed',
-          100: '#ffedd5',
-          200: '#fed7aa',
-          400: '#fb923c',
-          500: '#f97316',
-          600: '#ea580c',
-        },
-        microg: {
-          400: '#38bdf8',
-          500: '#0ea5e9',
-          600: '#0284c7',
+        telemetry: {
+          amber: '#f59e0b',
+          cyan: '#06b6d4',
+          emerald: '#10b981',
+          rose: '#f43f5e',
+          orange: '#ff5722',
+          blue: '#3b82f6',
         }
       },
+      fontFamily: {
+        mono: ['ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'monospace'],
+        sans: ['system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+      },
+      backgroundImage: {
+        'grid-pattern': "linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px), linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px)",
+      }
     },
   },
   plugins: [],
