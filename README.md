@@ -1,5 +1,7 @@
 # Flame in Freefall: SI-Powered Fire Safety Intelligence Dashboard
 
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fnileshgarg-tech%2Fflame-in-freefall)
+[![GitHub Repository](https://img.shields.io/badge/GitHub-nileshgarg--tech%2Fflame--in--freefall-blue?logo=github)](https://github.com/nileshgarg-tech/flame-in-freefall)
 [![NASA Space Apps 2026](https://img.shields.io/badge/NASA%20Space%20Apps-2026%20Challenge-orange.svg)](https://www.spaceappschallenge.org/2026/challenges/flame-in-freefall/)
 [![Verification Status](https://img.shields.io/badge/Verification%20Report-PASSED%20(100%25)-emerald.svg)](./dist/verification-report.json)
 [![Architecture Standard](https://img.shields.io/badge/Engineering%20Standard-Lauren%20Tan%20Trust%20Pyramid-blue.svg)](./ARCHITECTURE.md)
